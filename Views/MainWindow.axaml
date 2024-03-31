@@ -1,0 +1,31 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        x:Class="ComplexCalc.MainWindow"
+        Width="400"
+        Height="400"
+        Title="Complex Number Operations">
+    <StackPanel Margin="20">
+        <TextBlock Text="Enter the first complex number:" FontWeight="Bold" Margin="0,0,0,5"/>
+        <StackPanel Orientation="Horizontal" Margin="0,0,0,10">
+            <TextBlock Text="Real part:" VerticalAlignment="Center"/>
+            <TextBox x:Name="RealPart1" Width="100" Margin="5,0"/>
+            <TextBlock Text="Imaginary part:" Margin="10,0,0,0" VerticalAlignment="Center"/>
+            <TextBox x:Name="ImaginaryPart1" Width="100" Margin="5,0"/>
+        </StackPanel>
+        <TextBlock Text="Enter the second complex number:" FontWeight="Bold" Margin="0,0,0,5"/>
+        <StackPanel Orientation="Horizontal" Margin="0,0,0,10">
+            <TextBlock Text="Real part:" VerticalAlignment="Center"/>
+            <TextBox x:Name="RealPart2" Width="100" Margin="5,0"/>
+            <TextBlock Text="Imaginary part:" Margin="10,0,0,0" VerticalAlignment="Center"/>
+            <TextBox x:Name="ImaginaryPart2" Width="100" Margin="5,0"/>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal" Margin="0,20,0,10">
+            <Button Content="Sum" Click="Sum_Click" Width="80"/>
+            <Button Content="Difference" Click="Difference_Click" Width="80" Margin="10,0"/>
+            <Button Content="Product" Click="Product_Click" Width="80" Margin="10,0"/>
+            <Button Content="Quotient" Click="Quotient_Click" Width="80" Margin="10,0"/>
+            <Button Content="Comparison" Click="Comparison_Click" Width="80" Margin="10,0"/>
+        </StackPanel>
+        <TextBlock x:Name="Result" Margin="0,20,0,0" FontWeight="Bold"/>
+    </StackPanel>
+</Window>
